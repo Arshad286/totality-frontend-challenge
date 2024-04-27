@@ -1,0 +1,101 @@
+h1{
+    margin-top: 80px;
+}
+.cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cartItem {
+    width: 700px;
+    height: 250px;
+    display: flex;
+  
+    align-items: center;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    margin: 30px;
+      
+  }
+
+  
+  
+  .cartItem .description {
+    flex: 1;
+    font-size: 30px;
+  }
+  
+  .countHandler input {
+    width: 40px;
+    text-align: center;
+    font-weight: bolder;
+  }
+
+
+  .cartItemImage {
+    width: 300px; 
+    height: auto;  
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+
+  .checkout {
+    background-color: #f36;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkout:hover {
+    background-color: grey
+  }
+  .totalBalance {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #333; 
+    background-color: #f4f4f4; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .totalBalance::before {
+    content: "💰"; 
+    margin-right: 10px;
+  }
+
+  .cartButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cartButtons button {
+    background-color: grey; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .cartButtons button:hover {
+    background-color: #45a049; /* Darker green */
+  }
+  
+  .cartButtons button:disabled {
+    background-color: #cccccc; /* Grey */
+    cursor: not-allowed;
+  }
+  
+  
+  
